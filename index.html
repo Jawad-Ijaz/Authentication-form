@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="display.html">
+    
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(237, 216, 146);">
+    <div style=" height: 100px; width:100%;color: black;text-align: center;padding-top: 40px;font-weight: 800;font-size: large;" id="greeting"></div>
+    <div class="registerform" id="registerrform">
+        <div class="form">
+            <h1 style="text-align: center;">Register Form</h1>
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk739r_6trlxI3aBj8MepnvK6oW15Gj6OTVkP-af0&s"
+                    alt="my image"><br>
+            </div>
+            <div class="data">
+                <input type="text" id="name" name="Username" placeholder="Username"><br></br>
+                <input type="password" id="pass" name="Password" placeholder="Password"><br><br>
+                <input type="email" id="ema" name="EmailAdress" placeholder="Email Adress">
+            </div><br>
+            <button onclick="signUp()"class="button">Create</button>
+            <h3 class="not">Already registered? <a href="#loginnform">Create</a></h3>
+        </div>
+    </div>
+    <div class="loginform" id="loginnform">
+        <div class="form">
+            <h1 style="text-align: center;">Login Form</h1>
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9JsqxOgGFNVVKBMVmeCoU-G1W-rWUcb057f6NERgAYHHaJ8BknDGWXNyScS6v969bq0&usqp=CAU"
+                    alt="my image"><br>
+            </div>
+            <div class="data">
+                <input type="text" id="name" name="Username" placeholder="Username"><br></br>
+                <input type="password" id="pass" name="Password" placeholder="Password"><br><br>
+            </div><br>
+            <button class="button">Login</button>
+            <h3 class="not">Not registered yet? <a href="#registerrform">Sign Up</a></h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
